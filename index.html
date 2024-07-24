@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="screen">
+        <div class="box-border" id="box">
+            <div class="form">
+                <div class="git-hub-profile"></div>
+                <h1 id="git">GitHub</h1>
+                <label for="input-box">Enter Username</label>
+                <input type="text" name="Username" id="input-box">
+                <button onclick="flipBox()" id="btn">Get Info</button>
+            </div>
+            <div class="details">
+                <div id="profile_image" class="profile_image"></div>
+                <h2 id="username"></h2>
+                <h2  id="reps">Repository</h2>
+                <div id="Reposdetails"></div>
+                <button id="details-button" onclick="flipBox()">Back</button> 
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>        

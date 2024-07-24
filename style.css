@@ -1,0 +1,149 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.screen {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    perspective: 1000px;
+}
+
+.box-border {
+    height: 700px;
+    width: 700px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form, .details {
+    height: 700px;
+    width: 600px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+}
+
+.details {
+    transform: rotateY(180deg);
+}
+
+.box-border.flipped {
+    transform: rotateY(180deg);
+}
+
+.git-hub-profile {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-image: url("https://cdn0.iconfinder.com/data/icons/free-social-media-set/24/github-512.png");
+    background-size: cover;
+    position: absolute;
+    top: 50px;
+}
+
+#git {
+    color: white;
+    position: absolute;
+    top: 250px;
+}
+
+label {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    top: 320px;
+    left: 50px;
+}
+
+#input-box {
+    padding: 10px;
+    width: 500px;
+    border-radius: 10px;
+    position: absolute;
+    top: 350px;
+}
+
+#btn {
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    top: 500px;
+}
+
+.details {
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.profile_image {
+    margin: 40px;
+    border-radius: 50%;
+}
+
+#username {
+    margin-top: 20px;
+    color: white;
+}
+
+#repos {
+    margin-top: 20px;
+}
+
+a{
+    text-decoration: none;
+    margin: 0px,10px;
+    padding: 0px,10px;
+}
+p{
+    color: white;
+}
+#reps{
+  margin:20px 0px;  
+  color: white;
+
+}
+#Reposdetails {
+    height: 450px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-y:scroll;
+}
+
+#details-button{
+    margin: 0px 0px 20px 0px;
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
